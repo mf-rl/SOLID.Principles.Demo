@@ -1,8 +1,7 @@
 ﻿namespace SOLID.Principles.Demo._4.InterfaceSegregation.Correct
 {
-    public class MultiFunctionPrinter : IPrinter, IScanner
+    public class OldPrinter : IPrinter
     {
         public void Print() { /* print */ }
-        public void Scan() { /* scan */ }
     }
 }

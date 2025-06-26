@@ -1,12 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace SolidPrinciplesDemo._4.InterfaceSegregation.Incorrect
+﻿namespace SOLID.Principles.Demo._4.InterfaceSegregation.Incorrect
 {
-    internal class IMachine
+    public interface IMachine
     {
+        void Print();
+        void Scan();
     }
 }

@@ -1,12 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace SolidPrinciplesDemo._4.InterfaceSegregation.Correct
+﻿namespace SOLID.Principles.Demo._4.InterfaceSegregation.Correct
 {
-    internal class IScanner
-    {
-    }
+    public interface IScanner { void Scan(); }
 }
