@@ -1,12 +1,21 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace SolidPrinciplesDemo._2.OpenClosed.Correct
+﻿namespace SOLID.Principles.Demo._2.OpenClosed.Correct
 {
-    internal class DiscountCalculator
+    public class DiscountCalculator
     {
+        private static readonly Dictionary<string, IDiscount> _discountStrategies = new(StringComparer.OrdinalIgnoreCase)
+        {
+            { "Regular", new RegularCustomerDiscount() },
+            { "Premium", new PremiumCustomerDiscount() },
+            { "VIP", new VipCustomerDiscount() }
+        };
+        public static double CalculateDiscount(string customerType)
+        {
+            if (_discountStrategies.TryGetValue(customerType, out IDiscount? value))
+            {
+                return value.GetDiscount();
+            }
+
+            return 0; // Default if type not found
+        }
     }
 }
