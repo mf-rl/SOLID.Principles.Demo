@@ -1,12 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace SolidPrinciplesDemo._3.LiskovSubstitution.Incorrect
+﻿namespace SolidPrinciplesDemo._3.LiskovSubstitution.Incorrect
 {
-    internal class Bird
+    public class Bird
     {
+        public virtual void Fly() { /* flying */ }
     }
 }
