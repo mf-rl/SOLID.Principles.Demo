@@ -1,12 +1,15 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using SOLID.Principles.Demo._5.DependencyInversion.Incorrect;
 
 namespace SolidPrinciplesDemo._5.DependencyInversion.Incorrect
 {
-    internal class UserService
+    /*
+        Problem: UserService is tightly coupled to FileLogger.
+
+        Why it breaks DIP: High-level class directly depends on a low-level class instead of an abstraction. 
+    */
+    public class UserService
     {
+        private FileLogger logger = new FileLogger();
+        public void RegisterUser() { logger.Log("User Registered"); }
     }
 }
