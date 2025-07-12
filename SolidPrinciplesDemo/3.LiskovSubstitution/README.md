@@ -1,10 +1,10 @@
-### 3. 🔄 Liskov Substitution Principle (LSP)
+# 🔄 Liskov Substitution Principle (LSP)
 
 > **"Objects of a superclass should be replaceable with objects of subclasses without breaking the application."**
 
 Subclasses must be substitutable for their base classes.
 
-#### ❌ Incorrect Implementation
+### ❌ [Incorrect Implementation](https://github.com/mf-rl/SOLID.Principles.Demo/edit/master/SolidPrinciplesDemo/3.LiskovSubstitution/Incorrect.cs)
 ```csharp
 public class Bird
 {
@@ -28,7 +28,7 @@ public class Ostrich : Bird
 - Violates the "substitutable" contract
 - Client code must know implementation details
 
-#### ✅ Correct Implementation
+### ✅ [Correct Implementation](https://github.com/mf-rl/SOLID.Principles.Demo/edit/master/SolidPrinciplesDemo/3.LiskovSubstitution/Correct.cs)
 ```csharp
 public abstract class Bird { }
 
@@ -52,5 +52,3 @@ public class Ostrich : Bird
 - Any `Bird` can be substituted without breaking functionality
 - Only flying birds implement the flying interface
 - Clear separation of capabilities
-
----
