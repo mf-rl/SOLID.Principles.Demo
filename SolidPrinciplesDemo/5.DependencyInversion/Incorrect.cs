@@ -1,6 +1,4 @@
-﻿using SOLID.Principles.Demo._5.DependencyInversion.Incorrect;
-
-namespace SolidPrinciplesDemo._5.DependencyInversion.Incorrect
+﻿namespace SolidPrinciplesDemo._5.DependencyInversion.Incorrect
 {
     /*
         Problem: UserService is tightly coupled to FileLogger.
@@ -11,5 +9,9 @@ namespace SolidPrinciplesDemo._5.DependencyInversion.Incorrect
     {
         private FileLogger logger = new FileLogger();
         public void RegisterUser() { logger.Log("User Registered"); }
+    }
+    public class FileLogger
+    {
+        public void Log(string message) { /* log to file */ }
     }
 }

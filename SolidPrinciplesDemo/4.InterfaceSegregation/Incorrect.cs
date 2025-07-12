@@ -10,4 +10,14 @@
         public void Print() { /* print */ }
         public void Scan() { throw new NotImplementedException(); }
     }
+    public class MultiFunctionPrinter : IMachine
+    {
+        public void Print() { /* print */ }
+        public void Scan() { /* scan */ }
+    }
+    public interface IMachine
+    {
+        void Print();
+        void Scan();
+    }
 }

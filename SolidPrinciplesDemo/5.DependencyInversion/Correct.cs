@@ -11,4 +11,9 @@
         public UserService(ILogger logger) { this.logger = logger; }
         public void RegisterUser() { logger.Log("User Registered"); }
     }
+    public interface ILogger { void Log(string message); }
+    public class FileLogger : ILogger
+    {
+        public void Log(string message) { /* log to file */ }
+    }
 }

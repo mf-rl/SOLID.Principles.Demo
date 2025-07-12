@@ -9,4 +9,11 @@
     {
         public void Print() { /* print */ }
     }
+    public class MultiFunctionPrinter : IPrinter, IScanner
+    {
+        public void Print() { /* print */ }
+        public void Scan() { /* scan */ }
+    }
+    public interface IPrinter { void Print(); }
+    public interface IScanner { void Scan(); }
 }
