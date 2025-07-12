@@ -1,10 +1,10 @@
-### 5. ⬇️ Dependency Inversion Principle (DIP)
+# ⬇️ Dependency Inversion Principle (DIP)
 
 > **"High-level modules should not depend on low-level modules. Both should depend on abstractions."**
 
 Depend on abstractions, not concretions.
 
-#### ❌ Incorrect Implementation
+### ❌ [Incorrect Implementation](https://github.com/mf-rl/SOLID.Principles.Demo/blob/master/SolidPrinciplesDemo/5.DependencyInversion/Incorrect.cs)
 ```csharp
 public class UserService
 {
@@ -28,7 +28,7 @@ public class FileLogger
 - Hard to swap logging strategies
 - Difficult to unit test
 
-#### ✅ Correct Implementation
+### ✅ [Correct Implementation](https://github.com/mf-rl/SOLID.Principles.Demo/blob/master/SolidPrinciplesDemo/5.DependencyInversion/Correct.cs)
 ```csharp
 public class UserService
 {
