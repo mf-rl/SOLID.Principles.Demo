@@ -10,11 +10,11 @@ This project demonstrates the five **SOLID principles** of object-oriented desig
 
 SOLID is an acronym for five design principles that make software designs more understandable, flexible, and maintainable:
 
-- **S** - [Single Responsibility Principle](https://github.com/mf-rl/SOLID.Principles.Demo/tree/master/SolidPrinciplesDemo/1.SingleResponsibility)
-- **O** - [Open/Closed Principle](https://github.com/mf-rl/SOLID.Principles.Demo/tree/master/SolidPrinciplesDemo/2.OpenClosed)  
-- **L** - [Liskov Substitution Principle](https://github.com/mf-rl/SOLID.Principles.Demo/tree/master/SolidPrinciplesDemo/3.LiskovSubstitution)
-- **I** - [Interface Segregation Principle](https://github.com/mf-rl/SOLID.Principles.Demo/tree/master/SolidPrinciplesDemo/4.InterfaceSegregation)
-- **D** - [Dependency Inversion Principle](https://github.com/mf-rl/SOLID.Principles.Demo/tree/master/SolidPrinciplesDemo/5.DependencyInversion)
+- **S** - [Single Responsibility Principle](https://github.com/mf-rl/SOLID.Principles.Demo/tree/master/SolidPrinciplesDemo/1.SingleResponsibility/README.md)
+- **O** - [Open/Closed Principle](https://github.com/mf-rl/SOLID.Principles.Demo/tree/master/SolidPrinciplesDemo/2.OpenClosed/README.md)  
+- **L** - [Liskov Substitution Principle](https://github.com/mf-rl/SOLID.Principles.Demo/tree/master/SolidPrinciplesDemo/3.LiskovSubstitution/README.md)
+- **I** - [Interface Segregation Principle](https://github.com/mf-rl/SOLID.Principles.Demo/tree/master/SolidPrinciplesDemo/4.InterfaceSegregation/README.md)
+- **D** - [Dependency Inversion Principle](https://github.com/mf-rl/SOLID.Principles.Demo/tree/master/SolidPrinciplesDemo/5.DependencyInversion/README.md)
 
 ## 📂 Project Structure
 
