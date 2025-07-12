@@ -1,10 +1,10 @@
-### 4. 🔌 Interface Segregation Principle (ISP)
+# 🔌 Interface Segregation Principle (ISP)
 
 > **"Clients should not be forced to depend on methods they do not use."**
 
 Interfaces should be small and focused.
 
-#### ❌ Incorrect Implementation
+### ❌ [Incorrect Implementation](https://github.com/mf-rl/SOLID.Principles.Demo/blob/master/SolidPrinciplesDemo/4.InterfaceSegregation/Incorrect.cs)
 ```csharp
 public interface IMachine
 {
@@ -35,7 +35,7 @@ public class MultiFunctionPrinter : IMachine
 - Violates the interface contract with exceptions
 - Creates unnecessary dependencies
 
-#### ✅ Correct Implementation
+### ✅ [Correct Implementation](https://github.com/mf-rl/SOLID.Principles.Demo/blob/master/SolidPrinciplesDemo/4.InterfaceSegregation/Correct.cs)
 ```csharp
 public interface IPrinter 
 { 
@@ -63,5 +63,3 @@ public class MultiFunctionPrinter : IPrinter, IScanner
 - Classes only implement interfaces they actually need
 - No unnecessary method implementations
 - Clear and focused interfaces
-
----
