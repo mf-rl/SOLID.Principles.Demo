@@ -1,10 +1,10 @@
-### 1. 🎯 Single Responsibility Principle (SRP)
+# 🎯 Single Responsibility Principle (SRP)
 
 > **"A class should have one and only one reason to change."**
 
 A class should only have one job or responsibility.
 
-#### ❌ Incorrect Implementation
+### ❌ [Incorrect Implementation](https://github.com/mf-rl/SOLID.Principles.Demo/blob/master/SolidPrinciplesDemo/1.SingleResponsibility/Incorrect.cs)
 ```csharp
 public class InvoiceManager
 {
@@ -27,7 +27,7 @@ public class InvoiceManager
 - Violates the "single reason to change" rule
 - Hard to test individual responsibilities
 
-#### ✅ Correct Implementation
+### ✅ [Correct Implementation](https://github.com/mf-rl/SOLID.Principles.Demo/blob/master/SolidPrinciplesDemo/1.SingleResponsibility/Correct.cs)
 ```csharp
 public class InvoiceManager
 {
@@ -60,5 +60,3 @@ public class InvoiceEmailSender
 - Each class has a single responsibility
 - Changes in one area don't affect others
 - Easy to test and maintain
-
----
