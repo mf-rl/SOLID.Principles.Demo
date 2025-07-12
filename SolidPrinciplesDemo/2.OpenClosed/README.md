@@ -1,10 +1,10 @@
-### 2. 🔓 Open/Closed Principle (OCP)
+# 🔓 Open/Closed Principle (OCP)
 
 > **"Classes should be open for extension, but closed for modification."**
 
 You should be able to add new behavior without changing existing code.
 
-#### ❌ Incorrect Implementation
+### ❌ [Incorrect Implementation](https://github.com/mf-rl/SOLID.Principles.Demo/blob/master/SolidPrinciplesDemo/1.SingleResponsibility/Incorrect.cs)
 ```csharp
 public class DiscountCalculator
 {
@@ -24,7 +24,7 @@ public class DiscountCalculator
 - Risk of breaking existing functionality
 - Violates the "closed for modification" rule
 
-#### ✅ Correct Implementation
+### ✅ [Correct Implementation](https://github.com/mf-rl/SOLID.Principles.Demo/blob/master/SolidPrinciplesDemo/1.SingleResponsibility/Correct.cs)
 ```csharp
 public class DiscountCalculator
 {
@@ -70,5 +70,3 @@ public class VipCustomerDiscount : IDiscount
 - New discount types can be added without modifying existing code
 - Existing code remains untouched and stable
 - Easy to extend with new functionality
-
----
