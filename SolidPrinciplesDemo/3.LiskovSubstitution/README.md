@@ -4,7 +4,7 @@
 
 Subclasses must be substitutable for their base classes.
 
-### ❌ [Incorrect Implementation](https://github.com/mf-rl/SOLID.Principles.Demo/edit/master/SolidPrinciplesDemo/3.LiskovSubstitution/Incorrect.cs)
+### ❌ [Incorrect Implementation](https://github.com/mf-rl/SOLID.Principles.Demo/blob/master/SolidPrinciplesDemo/3.LiskovSubstitution/Incorrect.cs)
 ```csharp
 public class Bird
 {
@@ -28,7 +28,7 @@ public class Ostrich : Bird
 - Violates the "substitutable" contract
 - Client code must know implementation details
 
-### ✅ [Correct Implementation](https://github.com/mf-rl/SOLID.Principles.Demo/edit/master/SolidPrinciplesDemo/3.LiskovSubstitution/Correct.cs)
+### ✅ [Correct Implementation](https://github.com/mf-rl/SOLID.Principles.Demo/blob/master/SolidPrinciplesDemo/3.LiskovSubstitution/Correct.cs)
 ```csharp
 public abstract class Bird { }
 
