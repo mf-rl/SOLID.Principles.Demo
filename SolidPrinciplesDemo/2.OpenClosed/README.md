@@ -4,7 +4,7 @@
 
 You should be able to add new behavior without changing existing code.
 
-### ❌ [Incorrect Implementation](https://github.com/mf-rl/SOLID.Principles.Demo/blob/master/SolidPrinciplesDemo/1.SingleResponsibility/Incorrect.cs)
+### ❌ [Incorrect Implementation](https://github.com/mf-rl/SOLID.Principles.Demo/blob/master/SolidPrinciplesDemo/2.OpenClosed/Incorrect.cs)
 ```csharp
 public class DiscountCalculator
 {
@@ -24,7 +24,7 @@ public class DiscountCalculator
 - Risk of breaking existing functionality
 - Violates the "closed for modification" rule
 
-### ✅ [Correct Implementation](https://github.com/mf-rl/SOLID.Principles.Demo/blob/master/SolidPrinciplesDemo/1.SingleResponsibility/Correct.cs)
+### ✅ [Correct Implementation](https://github.com/mf-rl/SOLID.Principles.Demo/blob/master/SolidPrinciplesDemo/2.OpenClosed/Correct.cs)
 ```csharp
 public class DiscountCalculator
 {
